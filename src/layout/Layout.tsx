@@ -1,15 +1,16 @@
+import React from 'react';
 import Header from './Header/Header';
 import Footer from './Footer/Footer';
-import React from 'react';
+import styles from './Layout.module.css';
 import { LayoutProps } from './Layout.props';
 
 const Layout = ({ children }: LayoutProps): JSX.Element => {
   return (
-    <>
-      <Header />
-      <main>{children}</main>
-      <Footer />
-    </>
+    <div className={styles.wrapper}>
+      <Header className={styles.header} />
+      <main className={styles.content}>{children}</main>
+      <Footer className={styles.footer} />
+    </div>
   );
 };
 

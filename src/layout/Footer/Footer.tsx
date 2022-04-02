@@ -1,7 +1,7 @@
 import React from 'react';
 
-const Footer = () => {
-  return <div>footer</div>;
+const Footer = ({ className }: { className: string }): JSX.Element => {
+  return <div className={className}>footer</div>;
 };
 
 export default Footer;
