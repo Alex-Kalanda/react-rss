@@ -1,5 +1,8 @@
+* {
+  box-sizing: border-box;
+}
 html {
-  font-size: 32px;
+  font-size: 28px;
 }
 .App {
   text-align: center;

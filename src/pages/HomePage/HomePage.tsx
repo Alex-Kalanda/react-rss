@@ -1,10 +1,11 @@
 import React from 'react';
-import Layout from '../layout/Layout';
+import Layout from '../../layout/Layout';
+import SearchBar from './component/SearchBar/SearchBar';
 
 const HomePage = () => {
   return (
     <Layout>
-      <div>homepage content</div>
+      <SearchBar />
     </Layout>
   );
 };
